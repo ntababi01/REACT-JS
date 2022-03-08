@@ -1,33 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import{ Form } from 'react-bootstrap';
-import{ Button } from 'react-bootstrap'
+import img from './azerty.png'
 function App() {
   return (
     <div className="app">
-      <Form>
-  <fieldset disabled>
-    <Form.Group className="mb-3">
-      <Form.Label htmlFor="disabledTextInput">Disabled input</Form.Label>
-      <Form.Control id="disabledTextInput" placeholder="Disabled input" />
-    </Form.Group>
-    <Form.Group className="mb-3">
-      <Form.Label htmlFor="disabledSelect">Disabled select menu</Form.Label>
-      <Form.Select id="disabledSelect">
-        <option>Disabled select</option>
-      </Form.Select>
-    </Form.Group>
-    <Form.Group className="mb-3">
-      <Form.Check
-        type="checkbox"
-        id="disabledFieldsetCheck"
-        label="Can't check this"
-      />
-    </Form.Group>
-    <Button type="submit">Submit</Button>
-  </fieldset>
-</Form>
+<div style={{ border: "solid 1px black", maxWidth: "100vw" }}>
+<h1 className="title red">Your name here</h1>
+
+<br />
+<div className="img">
+<img src={img} alt='' />
+
+  <br />
+  <img className='im' src="./174857.png" />
+</div>
+</div>
+
+<video width="420" height="340" controls>
+<source src="./qwerty.mp4" />
+</video>
     </div>
   );
 }
